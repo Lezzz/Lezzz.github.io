@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400i" rel="stylesheet">
+</head>
+<body>
+    <div class ="container">
+        <h1>Etch-A-Sketch</h1>
+        <p>Hold LMB to draw and RMB to erase.</p>
+        <div class="buttons">
+            <button id="resize" class ="resize_btn">Resize</button>
+            <button id="reset" class ="reset_btn">Reset</button>
+            <input id ="color" type="color" value="#FFFFFF">
+        </div>
+        <div class ="grid" id="grid" oncontextmenu ="return false;"></div>
+        <p>
+            current grid:
+            <span class="info"></span>
+
+        </p>
+    </div>
+    
+    <script src="sketch.js" ></script>
+</body>
+
+</html>
